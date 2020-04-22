@@ -76,7 +76,7 @@ To get started with the game “The Game: Face to Face”.
  ```
    Total time it tooks to finish the game is 2769 millseconds
  ```
-   ![Game Play](images/Gameplay.gif)
+   ![Game Play](Gameplay.gif)
 ### Concept & Code 
 The concept behind the entire game is to demonstrate how our rule-based AI player could play against opponent(Random Player).<br>
 The Rule-based AI Player is composed of two main rules :<br>
@@ -87,13 +87,13 @@ The explaination of Rule 1 with code snippet is shown below:<br>
 
 The Algorithm for the Rule 1 is describe below, here AI player is placing atleast one card  in  each  round.   For  placement  of  cards  on  ascending  pile  of  opponent’s  we  see AI  player  checks  whether  its  current  hand  cards  is  less  than  Top  Card  of  OpponentsAscending Discard Pile and it should be greater than the minimum Helping AscendingCard ( i.e initially minimum Helping Ascending Card is assigned with -1 value).  Here,our goal is look for minimum or least helping card to place on ascending pile.Similarly, we can see for placement of card on descending pile of opponent’s we check reverse  condition  that  is  current  hand  card  should  be  greater  than  Top  Card  of  Op-ponents Descending Discard Pile and less than minimum helping descending card( i.e initially minimum Helping descending Card variable is assigned with 61 value) here our objective is looking for higher no card to be placed. In this way by checking all game rules final placements of cards on opponent’s ascending and descending pile is done.
 
-![Algorithm/Rule 1](images/Algorithm-Rule-1.gif) <br>
+![Algorithm/Rule 1](Algorithm-Rule-1.gif) <br>
 
 
 
 The Algorithm for Rule 2 is show below in code snippet:
 The Algorithm for the Rule 2 is describe below,  here AI player is placing cards on ascending discard pile of its own. For placement of cards on ascending pile of its own’s, AI player checks whether its current hand cards is greater than Top Card of Own Ascending Discard Pile and we are also checking for the exception rule of game for own ascending pile (placing a card that is exactly 10 less than the number showing on the pile in a Or condition) and current card should lesser than the minimum Hurting Ascending Card( initially minimum Hurting Ascending Card is assigned with value 61, because we arelooking for smaller card ).  Here, our goal is to look for minimum or least hurting cardto our self to place on ascending pile.Similarly, we can see for placement of card on own descending pile .we check current hand  card  should  be  less  than  Top  Card  of  Own  Descending  Discard  Pile,  Or  condi-tion we checked the difference between current cards and Top Card of Own DescendingDiscard Pile should have a difference of 10 and current card should be grater than min-imum hurting descending card( i.e initially minimum hurting descending Card variableis assigned with -1 value) here our objective is looking for a card with less hurting to be placement in descending pile. In this way by checking all game rules final placements of cards on own ascending and descending pile is done.<br>
-![Algorithm/Rule 2](images/Algorithm-Rule-2.gif)
+![Algorithm/Rule 2](Algorithm-Rule-2.gif)
 ### Project report [here](https://git.cs.upb.de/avishekm/seminar-machine-learning/blob/master/Report/Report_Ml_AI_Game_Seminar.pdf) 
 ## Built With
 * [Java](https://www.oracle.com/java/technologies/javase-downloads.html) - Java SE 12/13
